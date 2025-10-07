@@ -1,0 +1,42 @@
+# Environment variables (CRITICAL - contains credentials)
+.env
+.env.local
+.env.*.local
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Playwright screenshots and artifacts
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+.cache/
