@@ -1,0 +1,17 @@
+[package]
+name = "grocery-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "grocery"
+path = "src/main.rs"
+
+[dependencies]
+grocery-core.workspace = true
+grocery-recipes.workspace = true
+grocery-list.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+clap = { version = "4", features = ["derive"] }

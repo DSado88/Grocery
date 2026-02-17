@@ -1,5 +1,6 @@
 # Environment variables (CRITICAL - contains credentials)
 .env
+.env.bot
 .env.local
 .env.*.local
 
@@ -36,6 +37,10 @@ env/
 # Logs
 *.log
 logs/
+
+# Rust
+target/
+Cargo.lock
 
 # Temporary files
 *.tmp

@@ -1,0 +1,13 @@
+[package]
+name = "grocery-recipes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+grocery-core.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+strsim = "0.11"
+
+[dev-dependencies]

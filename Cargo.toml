@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/grocery-core",
+    "crates/grocery-recipes",
+    "crates/grocery-list",
+    "crates/grocery-cli",
+]
+
+[workspace.dependencies]
+# Domain crates
+grocery-core = { path = "crates/grocery-core" }
+grocery-recipes = { path = "crates/grocery-recipes" }
+grocery-list = { path = "crates/grocery-list" }
+
+# Butler infrastructure (upstream, pinned to SHA — no fork)
+butler-claude  = { git = "https://github.com/jupitersoftco/butler.git", rev = "2c70ecbf" }
+butler-session = { git = "https://github.com/jupitersoftco/butler.git", rev = "2c70ecbf" }
+butler-wal     = { git = "https://github.com/jupitersoftco/butler.git", rev = "2c70ecbf" }
+butler-dirs    = { git = "https://github.com/jupitersoftco/butler.git", rev = "2c70ecbf" }
+butler-skills  = { git = "https://github.com/jupitersoftco/butler.git", rev = "2c70ecbf" }
+
+# Shared dependencies
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+thiserror = "2"
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
