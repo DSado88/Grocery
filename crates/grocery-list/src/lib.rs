@@ -1,2 +1,7 @@
-// grocery-list: shopping list generation
-// Phase 1 — to be implemented
+pub mod consolidator;
+pub mod formatter;
+pub mod generator;
+
+pub use consolidator::consolidate;
+pub use formatter::ShoppingList;
+pub use generator::generate_list;
