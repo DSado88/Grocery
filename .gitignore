@@ -42,6 +42,9 @@ logs/
 target/
 Cargo.lock
 
+# Butler WAL/session state (BUTLER_HOME isolation)
+.state/
+
 # Temporary files
 *.tmp
 .cache/

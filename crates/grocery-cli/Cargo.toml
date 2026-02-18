@@ -11,7 +11,12 @@ path = "src/main.rs"
 grocery-core.workspace = true
 grocery-recipes.workspace = true
 grocery-list.workspace = true
+butler-claude.workspace = true
 serde.workspace = true
 serde_json.workspace = true
 thiserror.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+rustyline.workspace = true
 clap = { version = "4", features = ["derive"] }
